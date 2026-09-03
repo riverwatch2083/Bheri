@@ -1,0 +1,14 @@
+{
+  "name": "river-watch",
+  "version": "1.0.0",
+  "description": "River stage monitoring and email alerts for selected DHM stations.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "poll": "node server.js --poll-once"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

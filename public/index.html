@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>River Watch</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">Karnali basin alert monitor</p>
+      <h1>River Watch</h1>
+      <p class="subtitle">Live DHM river stage tracking for Rimna, Simlighat, and Jajarkot with email alerts when admin-defined thresholds are crossed.</p>
+    </div>
+    <div class="signal" id="overallSignal">
+      <span>Loading</span>
+      <strong>--</strong>
+    </div>
+  </header>
+
+  <main>
+    <section class="summary-grid" id="stationCards"></section>
+
+    <section class="chart-band">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Stage movement</p>
+          <h2>Seven-day water level trace</h2>
+        </div>
+        <button id="refreshBtn" title="Refresh data">Refresh</button>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="riverChart"></canvas>
+      </div>
+    </section>
+
+    <section class="warnings">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Warnings</p>
+          <h2>Current alert desk</h2>
+        </div>
+      </div>
+      <div id="warningsList" class="warning-list"></div>
+    </section>
+
+    <section class="admin">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Admin</p>
+          <h2>Recipients and thresholds</h2>
+        </div>
+      </div>
+      <div class="admin-grid">
+        <label>Admin token <input id="adminToken" type="password" placeholder="ADMIN_TOKEN"></label>
+        <label>Admin email <input id="adminEmail" type="email"></label>
+        <label class="wide">Alert recipients <textarea id="recipients" rows="4"></textarea></label>
+      </div>
+      <div id="thresholds" class="thresholds"></div>
+      <div class="actions">
+        <button id="saveConfig">Save admin settings</button>
+        <button id="pollNow">Poll DHM now</button>
+        <p id="adminMessage"></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

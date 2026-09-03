@@ -1,0 +1,35 @@
+{
+  "adminEmail": "bridge4er@gmail.com",
+  "recipients": [
+    "sudeep02.bbdmp@gmail.com",
+    "dipesh01tiwari@gmail.com",
+    "dipesh.bbdmp2025@gmail.com"
+  ],
+  "pollMinutes": 10,
+  "stations": [
+    {
+      "dhmId": 145,
+      "stationNumber": "265",
+      "name": "Thulo Bheri at Rimna",
+      "seriesId": 2059,
+      "warningLevel": 5.6,
+      "dangerLevel": 6.2
+    },
+    {
+      "dhmId": 162,
+      "stationNumber": "267",
+      "name": "Sano Bheri at Simlighat",
+      "seriesId": 2267,
+      "warningLevel": 6,
+      "dangerLevel": 7
+    },
+    {
+      "dhmId": 4791,
+      "stationNumber": "268",
+      "name": "Saru Gad at Jajarkot",
+      "seriesId": 21342,
+      "warningLevel": 4.1,
+      "dangerLevel": null
+    }
+  ]
+}
